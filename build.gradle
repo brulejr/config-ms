@@ -43,6 +43,6 @@ jib {
 		}
 	}
 	container {
-		jvmFlags = ['-Dmy.property=example.value', '-Xms512m', '-Xdebug']
+		jvmFlags = ['-Dspring.cloud.config.server.git.uri=example.value', '-Xms512m', '-Xdebug']
 	}
 }
