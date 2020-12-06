@@ -42,4 +42,11 @@ jib {
 			password "${System.env.DOCKERHUB_CREDENTIALS_PSW}"
 		}
 	}
+	contiainer {
+		jvmFlags {
+			jvmFlag {
+				"-Dspring.cloud.config.server.git.uri=${System.env.CONFIG_GIT_URI}"
+			}
+		}
+	}
 }
